@@ -1,22 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body {
-    font-family: "Inter", serif;
+html, body {
+    height: 100%;
 }
 
-button {
+body {
+    font-family: "Inter", serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width: 30rem;
+    padding: 1rem;
+}
+
+.btn-generate {
     background-color: white;
-    border: 2px solid #da3c3c;
+    border: 2px solid #ff3d3d;
     border-radius: 0.25rem;
-    color: #da3c3c;
+    color: #ff3d3d;
     padding: 0.5rem 1rem;
     font-family: inherit;
     font-weight: 600;
     text-transform: uppercase;
+    transition: all 300ms;
 }
 
-button:hover {
+.btn-generate:hover {
     border-color: red;
     color: red;
     cursor: pointer;
 }
+
+#txt-sets {
+    outline: none;
+    border: 2px solid #acb5c4;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    transition: all 300ms;
+}
+
+#txt-sets:hover,
+#txt-sets:focus {
+    outline: none;
+    border-color: black;
+}
+
+#result {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#result li {
+    display: flex;
+    column-gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+#result li span {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, red, #e07f7f);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button>Generate numbers</button>
+    
+    <div class="container">
+        <div class="form-wrapper">
+            <input id="txt-sets" type="number" placeholder="Sets of numbers" value="10"/>
+            <button class="btn-generate" onclick="generate()">Generate numbers</button>
+        </div>
+        <ul id="result"></ul>
+    </div>
 
     <script type="text/javascript" src="loto.js"></script>
 </body>
